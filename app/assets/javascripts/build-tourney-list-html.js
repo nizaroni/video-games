@@ -6,7 +6,7 @@ function buildTourneyListHtml (tournaments) {
   var listItems = tournaments.reduce(buildItemHtml, '')
 
   return '\
-    <ul class="tourney-list">\
+    <ul class="tourney-list" data-hook="tourney-list">\
       ' + listItems + '\
     </ul>\
   '

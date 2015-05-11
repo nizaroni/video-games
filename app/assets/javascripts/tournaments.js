@@ -4,3 +4,4 @@
 $('.ctrl-tournaments.actn-index').ready(tournamentsIndex)
 
 $('[data-hook~=tourney-add]').on('click', showTournamentForm)
+$('[data-hook~=tourney-form]').on('submit', createTournament)
