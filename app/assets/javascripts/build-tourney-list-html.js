@@ -1,10 +1,6 @@
 function buildTourneyListHtml (tournaments) {
   function buildItemHtml (previous, tournament) {
-    return previous + '\
-      <li>\
-        <a href="/tournaments/' + tournament.id + '">' + tournament.name + '</a>\
-      </li>\
-    '
+    return previous + buildTourneyHtml(tournament)
   }
 
   var listItems = tournaments.reduce(buildItemHtml, '')
