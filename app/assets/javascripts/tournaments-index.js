@@ -21,5 +21,7 @@ function tournamentsIndex () {
     }
 
     $tourneySection.append(html)
+
+    $('[data-hook~=tourney-add]').removeClass('hidden')
   }
 }
