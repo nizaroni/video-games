@@ -12,6 +12,13 @@ class TournamentsController < ApplicationController
     render(json: tournament, status: 201)
   end
 
+  def destroy
+    tournament = Tournament.find_by_id(params[:id])
+    tournament.destroy
+    
+    render(json: tournament)
+  end
+
 
   private
 
