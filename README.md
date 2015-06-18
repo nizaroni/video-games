@@ -12,9 +12,13 @@ Task #1: Models
 
 First we need a model to represent tournaments.
 For that let's create a `Tournament` model with a `name` field.
-A tournament can have several players participating in it.
+A `Tournament` can have several players participating in it.
 We should represent this with a second model, `Player`.
 A `Player` should also have a `name` field.
+A `Player` can also participate in many tournaments,
+so we need an intermediate model to establish the 
+`has_many_through` association.
+We will call it `Registrations`.
 
 
 

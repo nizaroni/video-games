@@ -3,5 +3,14 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+  Tournament.create([{ name: 'DOTA' }, { name: 'Starcraft' }, { name: 'Counter' }])
+  Player.create([{ name: 'pepito21' }, { name: 'XxxX' }, { name: 'Trololo' }])
+
+  tournaments = Tournament.all
+  players = Player.all
+
+  tournaments.each do |tournament|
+    tournament.players << players.sample(rand(1..3))
+  end
+  
+
