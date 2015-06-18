@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get '/' => 'tournaments#index'
-  get 'api/tournaments' => 'tournaments_api#index'
+  get 'api/tournaments' => 'tournaments#index'
   post 'api/tournaments' => 'tournaments_api#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
