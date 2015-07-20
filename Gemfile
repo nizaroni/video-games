@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+#Use tzinfo if you're a noob on windows(I use windows dont kill me)
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
